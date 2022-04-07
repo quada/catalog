@@ -51,7 +51,8 @@ data:
         # Valid values are 'edgetpu' (requires device property below) and 'cpu'.
         type: edgetpu
         # Optional: device name as defined here: https://coral.ai/docs/edgetpu/multiple-edgetpu/#using-the-tensorflow-lite-python-api
-        device: pci
+        # MAKE SELECTOR FOR USB or PCI
+        device: usb
 {{- end }}
 {{- else }}
       cpu1:
