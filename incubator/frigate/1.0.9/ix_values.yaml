@@ -61,24 +61,24 @@ frigate:
             - detect
             - rtmp
       record:
-        enabled: True
+        enabled: False
       # Optional: timeout for highest scoring image before allowing it
       # to be replaced by a newer image. (default: shown below)
       best_image_timeout: 60
-      snapshots:
-        enabled: True
+      #snapshots:
+        #enabled: True
 persistence:
   cache:
-    enabled: true
+    enabled: false
     mountPath: "/tmp/cache"
     type: "emptyDir"
   shm:
-    enabled: true
+    enabled: false
     mountPath: "/dev/shm"
     type: "emptyDir"
     medium: "Memory"
   media:
-    enabled: true
+    enabled: false
     mountPath: "/media"
   coral:
-    enabled: true
+    enabled: false
