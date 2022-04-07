@@ -79,6 +79,6 @@ persistence:
     medium: "Memory"
   media:
     enabled: true
-    mountPath: "/media"
+    mountPath: "/mediamount"
   coral:
     enabled: true
