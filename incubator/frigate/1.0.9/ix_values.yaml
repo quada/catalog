@@ -65,8 +65,8 @@ frigate:
       # Optional: timeout for highest scoring image before allowing it
       # to be replaced by a newer image. (default: shown below)
       best_image_timeout: 60
-      #snapshots:
-        #enabled: True
+      snapshots:
+        enabled: True
 persistence:
   cache:
     enabled: false
