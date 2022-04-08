@@ -51,7 +51,7 @@ data:
         # Valid values are 'edgetpu' (requires device property below) and 'cpu'.
         type: edgetpu
         # Optional: device name as defined here: https://coral.ai/docs/edgetpu/multiple-edgetpu/#using-the-tensorflow-lite-python-api
-        # MAKE SELECTOR FOR USB or PCI
+        # ADDED selector for usb/pci
         device: usb
 {{- end }}
 {{- else }}
@@ -59,6 +59,7 @@ data:
         type: cpu
         # Optional: num_threads value passed to the tflite.Interpreter (default: shown below)
         # This value is only used for CPU types
+        # ADDED number of threads selector
         num_threads: 2
 {{- end }}
 
@@ -66,7 +67,8 @@ data:
     # Optional: Database configuration
     # database:
       # The path to store the SQLite DB (default: shown below)
-      # path: /media/frigate/frigate.db
+      # ADDED custom path for db
+      path: /securitymount/frigate/frigate.db
 
     # Optional: model modifications
     # model:
