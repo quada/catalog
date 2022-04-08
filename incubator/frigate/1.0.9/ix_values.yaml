@@ -68,6 +68,9 @@ frigate:
       snapshots:
         enabled: True
 persistence:
+  config:
+    enabled: true
+    mountpath: "/config"
   cache:
     enabled: false
     mountPath: "/tmp/cache"
@@ -78,7 +81,7 @@ persistence:
     type: "emptyDir"
     medium: "Memory"
   media:
-    enabled: false
-    mountPath: "/media"
+    enabled: true
+    mountPath: "/securitymount/frigate"
   coral:
     enabled: true
