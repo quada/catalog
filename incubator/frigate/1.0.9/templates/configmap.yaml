@@ -68,7 +68,7 @@ data:
     # database:
       # The path to store the SQLite DB (default: shown below)
       # ADDED custom path for db
-      path: /securitymount/frigate/frigate.db
+      # path: /securitymount/frigate/frigate.db
 
     # Optional: model modifications
     # model:
