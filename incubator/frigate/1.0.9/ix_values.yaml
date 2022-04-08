@@ -67,6 +67,25 @@ frigate:
       best_image_timeout: 60
       snapshots:
         enabled: True
+
+    - name: patio
+      objects:
+        track:
+          - person
+      detect:
+        height: 720
+        width: 1280
+      inputs:
+        - path: rtsp://testuser:Testpass@10.20.30.51:554
+          roles:
+            - detect
+            - rtmp
+      record:
+        enabled: False
+      best_image_timeout: 60
+      snapshots:
+        enabled: True
+        
 persistence:
   # ADDED config persistence
   config:
