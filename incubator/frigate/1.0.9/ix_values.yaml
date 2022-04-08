@@ -68,6 +68,7 @@ frigate:
       snapshots:
         enabled: True
 persistence:
+  # ADDED config persistence
   config:
     enabled: true
     mountpath: "/config"
