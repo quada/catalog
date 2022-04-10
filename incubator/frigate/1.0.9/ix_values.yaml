@@ -90,7 +90,7 @@ persistence:
   # ADDED config persistence
   config:
     enabled: true
-    mountpath: "/mnt/apps/frigate"
+    mountPath: "/mnt/apps/frigate"
   cache:
     enabled: false
     mountPath: "/tmp/cache"
