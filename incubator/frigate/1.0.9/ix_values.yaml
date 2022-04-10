@@ -105,3 +105,13 @@ persistence:
     mountPath: "/securitymount/frigate"
   coral:
     enabled: true
+    
+# needed??
+env:
+  NVIDIA_VISIBLE_DEVICES: "all"
+  NVIDIA_DRIVER_CAPABILITIES: "all"
+#needed??
+gpu:
+  nvidia:
+    # -- Enables NVIDIA GPU compatibility. Must also use the "amd64nvidia" tagged image
+    enabled: true
